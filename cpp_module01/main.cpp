@@ -6,7 +6,7 @@
 
 int main()
 {
-  Warlock richard("Richard", "the Titled");
+  const Warlock richard("Richard", "the Titled");
 
   Dummy bob;
   Fwoosh* fwoosh = new Fwoosh();
