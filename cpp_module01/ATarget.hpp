@@ -10,6 +10,7 @@ class ATarget
 		std::string type;
 		ATarget &operator=(ATarget &rhs);
 		ATarget (ATarget & src);
+		ATarget();
 
 	public:
 		ATarget(std::string const & type);

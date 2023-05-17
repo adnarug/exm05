@@ -1,12 +1,10 @@
-#include "ASpell.hpp"
-#include "ATarget.hpp"
-#include "Dummy.hpp"
-#include "Fwoosh.hpp"
 #include "Warlock.hpp"
+#include "Fwoosh.hpp"
+#include "Dummy.hpp"
 
-int main()
+int main(void)
 {
-  const Warlock richard("Richard", "the Titled");
+  Warlock richard("Richard", "the Titled");
 
   Dummy bob;
   Fwoosh* fwoosh = new Fwoosh();
@@ -18,4 +16,7 @@ int main()
 
   richard.forgetSpell("Fwoosh");
   richard.launchSpell("Fwoosh", bob);
+
+  delete fwoosh;
+  return 0;
 }
